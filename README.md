@@ -1,3 +1,22 @@
+# to upload:
+
+(rclone)[https://rclone.org/install/]
+
+`curl https://rclone.org/install.sh | sudo bash` 
+
+```toml
+[r2]
+
+type = s3
+provider = Cloudflare
+access_key_id = <id>
+
+secret_access_key = <key>
+
+endpoint = https://<endpoint>.r2.cloudflarestorage.com
+acl = private
+```
+
 # r2-public-worker
 
 A Cloudflare Worker to make your R2 bucket public!
